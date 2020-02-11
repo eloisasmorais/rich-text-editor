@@ -1,0 +1,7 @@
+@mixin mobile {
+  ul {
+    max-width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
