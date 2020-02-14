@@ -20,6 +20,9 @@ body {
 .menu li {
   padding: 15px;
 }
+.menu li:hover {
+  background-color: #abafd8;
+}
 @media screen and (max-width: 900px) {
   .menu ul {
     max-width: 100%;
@@ -36,6 +39,7 @@ body {
   outline: none;
   resize: none;
   padding: 5px 3px;
+  text-align-last: left;
 }
 
 .container {
@@ -45,6 +49,10 @@ body {
 .text-editor {
   width: 50%;
   margin: 20px auto;
+}
+
+.selected {
+  background-color: #abafd8;
 }
 
 /*# sourceMappingURL=style.css.map */
