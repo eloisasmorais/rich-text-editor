@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./img/text.png" type="image/x-icon" />
   <title>Not That Rich Text Editor</title>
+  <link href="https://fonts.googleapis.com/css?family=Chivo|Poiret+One&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/90c8a9ba9a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -13,25 +14,25 @@
 <body>
   <div class="container">
     <section>
-      <h1>Welcome to Not That Rich Text Editor</h1>
-      <p>Type and edit your text on the editor below!</p>
+      <h1 class="title">Welcome to Not That Rich Text Editor</h1>
+      <p class="secondary">Type and edit your text on the editor below!</p>
     </section>
     <main class="text-editor">
       <section class="menu">
-        <ul>
-          <li class="bold"><i class="fas fa-bold"></i></li>
-          <li class="italic"><i class="fas fa-italic"></i></li>
-          <li class="underline"><i class="fas fa-underline"></i></li>
-          <li class="list"><i class="fas fa-list-ul"></i></li>
-          <li class="image"><i class="far fa-images"></i></li>
-          <li class="code"><i class="fas fa-code"></i></li>
-        </ul>
+        <div>
+          <button onclick="toggleCommand('bold')"><i class="fas fa-bold"></i></button>
+          <button onclick="toggleCommand('italic')"><i class="fas fa-italic"></i></button>
+          <button onclick="toggleCommand('underline')"><i class="fas fa-underline"></i></button>
+          <button onclick="toggleCommand('insertUnorderedList')"><i class="fas fa-list-ul"></i></button>
+        </div>
       </section>
       <div contenteditable="true" id="text-area"></div>
     </main>
   </div>
   <footer class="footer">
-    Coded by <a href="https://github.com/eloisasmorais">Eloisa Morais</a>
+    <p>
+      Coded by <a href="https://github.com/eloisasmorais">Eloisa Morais</a>
+    </p>
   </footer>
   <script src="./js/script.js"></script>
 </body>
